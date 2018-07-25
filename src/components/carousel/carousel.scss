@@ -1,3 +1,67 @@
-.carousel {
-    width: 100%;
+.carousel-item {
+    position: relative;
+    .carousel-image {
+        width: 100%;
+    }
+}
+.info-container {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: 10%;
+    font-family: 'MTC-Extra-Bold';
+    width: 35%;
+    .heading,
+    .description {
+        color: white;
+        font-size: 2em;
+    }
+    .description {
+        font-size: 1em;
+        font-family: 'MTC-Regular';
+        line-height: 1.4em;
+    }
+    .heading {
+        padding-bottom: .4em;
+        width: 85%;
+    }
+    .carousel-button {
+        margin-top: 1em;
+        padding: 1em 2.5em;
+        text-transform: uppercase;
+        font-family: 'MTC-SemiBold';
+        font-size: .85em;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        transition: all .34s ease-in-out;
+        &:hover {
+            background: rgb(233, 230, 230);
+        }
+    }
+}
+
+.slick-arrow  {
+    background: #fff;
+    border-radius: 0;
+    width: 50px;
+    height: 50px;
+    transition: all .34s ease-in-out;
+    border: none;
+    &:hover {
+        background: rgb(233, 230, 230);
+    }
+}
+.slick-next, .slick-prev {
+    &:before {
+        content: '';
+        line-height: 0;
+    }
+}
+.slick-next {
+    right: 0;
+}
+.slick-prev {
+    left: 0;
+    z-index: 9999;
 }
