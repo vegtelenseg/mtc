@@ -9,7 +9,7 @@ export default class Carousel extends React.Component {
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows:true
+            arrows: true
         };
         return (
             <Slider {...settings}>

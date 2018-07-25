@@ -5,24 +5,24 @@
     }
 }
 .info-container {
-    top: 50%;
+    top: 57.5%;
     transform: translateY(-50%);
     position: absolute;
     left: 10%;
-    font-family: 'MTC-Extra-Bold';
-    width: 35%;
+    font-family: 'MTC-Bold';
+    width: 45%;
     .heading,
     .description {
         color: white;
-        font-size: 2em;
+        font-size: 3.5em;
     }
     .description {
-        font-size: 1em;
+        font-size: 1.24em;
         font-family: 'MTC-Regular';
         line-height: 1.4em;
     }
     .heading {
-        padding-bottom: .4em;
+        padding-bottom: 0.4em;
         width: 85%;
     }
     .carousel-button {
@@ -30,32 +30,32 @@
         padding: 1em 2.5em;
         text-transform: uppercase;
         font-family: 'MTC-SemiBold';
-        font-size: .85em;
+        font-size: 0.85em;
         border-radius: 4px;
         cursor: pointer;
         border: none;
-        transition: all .34s ease-in-out;
+        transition: all 0.34s ease-in-out;
         &:hover {
             background: rgb(233, 230, 230);
         }
     }
 }
 
-.slick-arrow  {
-    background: #fff;
-    border-radius: 0;
+.slick-arrow {
     width: 50px;
     height: 50px;
-    transition: all .34s ease-in-out;
-    border: none;
-    &:hover {
-        background: rgb(233, 230, 230);
-    }
+    transition: all 0.34s ease-in-out;
+    background: white !important; // Not really sure why this gets overridden :(
 }
-.slick-next, .slick-prev {
+.slick-next,
+.slick-prev {
     &:before {
         content: '';
         line-height: 0;
+        background: red;
+    }
+    &:hover {
+        background: rgb(233, 230, 230) !important;
     }
 }
 .slick-next {
