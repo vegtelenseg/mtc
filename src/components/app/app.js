@@ -5,6 +5,7 @@ import Welcome from '../welcome/welcome';
 import WhatWeDo from '../what-we-do/what-we-do';
 import OurApproach from '../our-approach/our-approach';
 import OurClientele from '../our-clientele/our-clientele';
+import Footer from '../footer/footer';
 export default class App extends React.Component {
     render() {
         return (
@@ -15,6 +16,7 @@ export default class App extends React.Component {
                 <WhatWeDo />
                 <OurApproach />
                 <OurClientele />
+                <Footer />
             </div>
         );
     }

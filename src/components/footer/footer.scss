@@ -1,0 +1,42 @@
+.footer-section {
+    display: grid;
+    color: white;
+    background-color: #061b30;
+    padding-top: 5em;
+    font-family: 'MTC-SemiBold';
+    font-size: 0.78em;
+    .footer-container {
+        display: grid;
+        grid-template-columns: 250px repeat(5, 1fr) 250px;
+        margin-bottom: 1.3em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+        padding-bottom: 2em;
+        div ul {
+            margin-top: 1em;
+            li {
+                font-family: 'MTC-Regular';
+                list-style-type: none;
+                margin-top: 1.78em;
+                font-size: 0.6em;
+                cursor: pointer;
+                transition: all 0.35s ease-in-out;
+                &:hover {
+                    color: rgb(233, 230, 230);
+                }
+            }
+        }
+    }
+    .copyright {
+        position: relative;
+        margin-bottom: 1em;
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: 'MTC-Light';
+        }
+    }
+}
