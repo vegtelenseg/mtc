@@ -4,7 +4,6 @@ import Slider from 'react-slick';
 export default class Carousel extends React.Component {
     render() {
         var settings = {
-            dots: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,

@@ -74,7 +74,6 @@ video {
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    overflow: hidden;
 }
 
 body {
@@ -169,3 +168,4 @@ select {
 @import './components/app/app.scss';
 @import './components/header/header.scss';
 @import './components/carousel/carousel.scss';
+@import './components/welcome/welcome.scss';
