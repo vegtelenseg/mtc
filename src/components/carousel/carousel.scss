@@ -51,8 +51,15 @@
 .slick-prev {
     &:before {
         content: '';
+        background: url(/public/assets/icons/chevron-right.svg);
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100000;
         line-height: 0;
-        background: red;
     }
     &:hover {
         background: rgb(233, 230, 230) !important;
@@ -60,8 +67,18 @@
 }
 .slick-next {
     right: 0;
+    &:before {
+        background: url('./assets/icons/chevron-right.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 .slick-prev {
     left: 0;
     z-index: 9999;
+    &:before {
+        background: url('./assets/icons/chevron-left.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
