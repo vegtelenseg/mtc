@@ -14,15 +14,27 @@
             border-bottom: 1px solid white;
             float: right;
             right: 4em;
-            padding-right: 6em;
+            padding-right: 1.5em;
             div {
                 display: inline-block;
                 cursor: pointer;
                 margin-bottom: 0.2em;
+                margin-right: .99em;
+                svg {
+                    margin-right: .66em;
+                    width: .9em;
+                    height: .9em;
+                    bottom: -3px;
+                    position: relative;
+                    stroke: black;
+                    fill: white;
+                    &:hover {
+                        fill: white;
+                    }
+                }
                 span {
                     font-family: 'MTC-Light';
                     font-size: 0.56em;
-                    margin-right: 2.8em;
                 }
             }
             span {

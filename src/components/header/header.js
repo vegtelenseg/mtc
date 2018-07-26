@@ -1,4 +1,5 @@
 import React from 'react';
+import { Phone , Mail, MapPin } from 'react-feather';
 
 export default class Header extends React.Component {
     render() {
@@ -7,13 +8,13 @@ export default class Header extends React.Component {
                 <div className="pre-header-items-container">
                     <div className="pre-header-items">
                         <div className="telephone">
-                            <span>+27 11 072 8872</span>
+                            <Phone className="phone-icon"/><span>+27 11 072 8872</span>
                         </div>
                         <div className="email">
-                            <span>info@mtcmasters.co.za</span>
+                            <Mail/><span>info@mtcmasters.co.za</span>
                         </div>
                         <div className="location">
-                            <span>82 Allandale Office Complex, Midrand</span>
+                            <MapPin/><span>82 Allandale Office Complex, Midrand</span>
                         </div>
                     </div>
                 </div>
