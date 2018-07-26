@@ -7,7 +7,7 @@ export default class OurApproach extends React.Component {
                 <div className="welcome-container">
                     <div className="left-section">
                         <h2 className="heading">
-                            <span>Our</span> Approach
+                            <span className="approach-border">Our</span> Approach
                         </h2>
                         <p className="description">
                             We are a dedicated, committed and competent fuel quality specialists

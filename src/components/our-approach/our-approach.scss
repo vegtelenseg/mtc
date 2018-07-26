@@ -1,3 +1,10 @@
 .our-approach-section {
     padding-top: 5%;
 }
+
+.approach-border {
+    position: relative;
+    &:after {
+        width: 250% !important;
+    }
+}

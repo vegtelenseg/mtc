@@ -1,0 +1,20 @@
+.our-clientele-container {
+    background: #061c31;
+    padding-top: 5%;
+    .heading {
+        color: #fff !important;
+        span:after {
+            background: #fff !important;
+        }
+    }
+}
+
+.our-clientele-description {
+    font-family: 'MTC-Bold';
+    color: white !important;
+    font-size: 1.14em !important;
+}
+.sub-text {
+    font-family: 'MTC-Light' !important;
+    font-size: 0.87em !important;
+}
