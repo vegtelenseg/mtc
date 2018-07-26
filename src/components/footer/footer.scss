@@ -2,9 +2,9 @@
     display: grid;
     color: white;
     background-color: #061b30;
-    padding-top: 5em;
+    padding-top: 3em;
     font-family: 'MTC-SemiBold';
-    font-size: 0.78em;
+    font-size: 1em;
     .footer-container {
         display: grid;
         grid-template-columns: 250px repeat(5, 1fr) 250px;
@@ -15,10 +15,10 @@
         div ul {
             margin-top: 1em;
             li {
-                font-family: 'MTC-Regular';
+                font-family: 'MTC-Light';
                 list-style-type: none;
-                margin-top: 1.78em;
-                font-size: 0.6em;
+                margin-top: 1.18em;
+                font-size: 0.65em;
                 cursor: pointer;
                 transition: all 0.35s ease-in-out;
                 &:hover {
@@ -26,10 +26,26 @@
                 }
             }
         }
+        .contact-us {
+            ul {
+                li {
+                    a {
+                        display: block;
+                        margin-top: 0.35em;
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                }
+                .address {
+                    cursor: initial;
+                }
+            }
+        }
     }
     .copyright {
         position: relative;
         margin-bottom: 1em;
+        font-size: 0.76em;
         p {
             position: absolute;
             top: 50%;

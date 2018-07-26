@@ -56,7 +56,24 @@ export default class Footer extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div>Get In Touch With Us</div>
+                    <div className="contact-us">
+                        Get In Touch With Us
+                        <ul>
+                            <li className="address">
+                                <a>22 San Vincezo</a>
+                                <a>5th Road Carlswald</a>
+                                <a>Midrand, 1681</a>
+                            </li>
+                            <li>
+                                <a href="tel:+27110748872">+27 11 074 8872</a>
+                                <a href="tel:+27763152855">+27 76 315 2855</a>
+                                <a href="tel:+27829983813">+27 82 998 3813</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@mtcmasters.co.za">info@mtcmasters.co.za</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="copyright">
                     <p>MTC Masters © 2018</p>

@@ -69,6 +69,10 @@
                     text-transform: uppercase;
                     font-family: 'MTC-Medium';
                     color: #fff;
+                    transition: all 0.4s ease-in;
+                    &:hover {
+                        background-color: rgba(4, 27, 51, 0.781);
+                    }
                     span {
                         right: 0;
                         float: right;
