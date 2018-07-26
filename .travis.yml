@@ -13,5 +13,4 @@ cache:
   - node_modules
 notifications:
     slack: trianglepoints:D4QTTXKVwzJDmjM8e6AkrCdD
-    on_success: always
     on_failure: always
