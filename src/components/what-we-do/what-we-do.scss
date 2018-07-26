@@ -1,0 +1,114 @@
+.what-we-do-section {
+    background: #061c31;
+    .what-we-do-container {
+        position: relative;
+        padding: 10%;
+        padding-top: 2%;
+        .heading {
+            color: #fff;
+            font-family: 'MTC-SemiBold';
+            font-size: 2em;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 0.5em;
+            &:after {
+                content: '';
+                background: #fff;
+                position: absolute;
+                height: 3px;
+                right: -2.6em;
+                top: 100%;
+                width: 70px;
+                margin-top: 0.1em;
+                transform: translateY(-50%);
+            }
+        }
+        .description {
+            font-family: 'MTC-Regular';
+            font-size: 0.8em;
+            line-height: 22px;
+            color: #fff;
+        }
+        .service-categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 0.67em;
+            grid-row-gap: 4em;
+            margin-top: 1.78em;
+            .service-type {
+                height: 12em;
+                width: 21em;
+                background: #fff;
+                position: relative;
+                .service-name {
+                    color: #fff;
+                    font-family: 'MTC-SemiBold';
+                    font-size: 0.8em;
+                    text-transform: uppercase;
+                    position: absolute;
+                    bottom: -1.8em;
+                    &:after {
+                        content: '';
+                        height: 3px;
+                        width: 77px;
+                        background: #fff;
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        margin-top: 0.6em;
+                    }
+                }
+                .service-explorer {
+                    background-color: rgba(6, 27, 48, 0.76);
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    cursor: pointer;
+                    padding: 0.56em 0;
+                    text-transform: uppercase;
+                    font-family: 'MTC-Medium';
+                    color: #fff;
+                    span {
+                        right: 0;
+                        float: right;
+                        margin-right: 3.2em;
+                        font-size: 0.75em;
+                        .chevron-circle {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: initial;
+                            float: initial;
+                            margin-right: initial;
+                            border: 1px solid #fff;
+                            border-radius: 50%;
+                            margin-left: 0.6em;
+                            width: 20px;
+                            height: 20px;
+                            svg {
+                                stroke: #fff;
+                                top: 50%;
+                                left: 50%;
+                                position: absolute;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+                }
+                $i: 1;
+                @for $i from 1 through 6 {
+                    &:nth-child(#{$i}) {
+                        @if $i > 3 {
+                            grid-row: 2;
+                            grid-column: $i - 3;
+                        } @else {
+                            grid-column: #{$i};
+                            grid-row: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
