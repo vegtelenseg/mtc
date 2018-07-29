@@ -163,7 +163,7 @@ input,
 select {
     vertical-align: middle;
 }
-
+@import './_variables.scss';
 @import '../public/assets/fonts/fonts.scss';
 @import './components/app/app.scss';
 @import './components/header/header.scss';

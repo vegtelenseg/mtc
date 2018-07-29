@@ -1,84 +1,28 @@
 import React from 'react';
 import Slider from 'react-slick';
-
+import slidesInfo from './slides-info';
 export default class Carousel extends React.Component {
     render() {
         var settings = {
             infinite: true,
-            speed: 500,
+            speed: 1000,
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true
+            arrows: true,
+            autoplay: true
         };
-        return (
-            <Slider {...settings}>
-                <div className="carousel-item">
-                    <img className="carousel-image" src="./assets/images/image3.png" alt="image1" />
-                    <div className="info-container">
-                        <h2 className="heading">Ultrasonic Tank Testing</h2>
-                        <h4 className="description">
-                            The aim is to be able to indentify any leak rapidly so as to limit all
-                            risk of pollution as much as possible
-                        </h4>
-                        <button className="carousel-button">explore our expertise</button>
-                    </div>
+        return <Slider {...settings}>{this.renderCarouselItems(slidesInfo)}</Slider>;
+    }
+    renderCarouselItems(slidesInfo) {
+        return slidesInfo.map((slideInfo, idx) => (
+            <div className="carousel-item" key={idx}>
+                <img className="carousel-image" src={slideInfo.imageUri} alt="image1" />
+                <div className="info-container">
+                    <h2 className="heading">{slideInfo.heading}</h2>
+                    <h4 className="description">{slideInfo.description}</h4>
+                    <button className="carousel-button">{slideInfo.btnText}</button>
                 </div>
-                <div className="carousel-item">
-                    <img className="carousel-image" src="./assets/images/image2.png" alt="image1" />
-                    <div className="info-container">
-                        <h2 className="heading">Ultrasonic Tank Testing</h2>
-                        <h4 className="description">
-                            The aim is to be able to indentify any leak rapidly so as to limit all
-                            risk of pollution as much as possible
-                        </h4>
-                        <button className="carousel-button">explore our expertise</button>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img className="carousel-image" src="./assets/images/image1.png" alt="image1" />
-                    <div className="info-container">
-                        <h2 className="heading">Ultrasonic Tank Testing</h2>
-                        <h4 className="description">
-                            The aim is to be able to indentify any leak rapidly so as to limit all
-                            risk of pollution as much as possible
-                        </h4>
-                        <button className="carousel-button">explore our expertise</button>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img className="carousel-image" src="./assets/images/image4.png" alt="image1" />
-                    <div className="info-container">
-                        <h2 className="heading">Ultrasonic Tank Testing</h2>
-                        <h4 className="description">
-                            The aim is to be able to indentify any leak rapidly so as to limit all
-                            risk of pollution as much as possible
-                        </h4>
-                        <button className="carousel-button">explore our expertise</button>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img className="carousel-image" src="./assets/images/image5.png" alt="image1" />
-                    <div className="info-container">
-                        <h2 className="heading">Ultrasonic Tank Testing</h2>
-                        <h4 className="description">
-                            The aim is to be able to indentify any leak rapidly so as to limit all
-                            risk of pollution as much as possible
-                        </h4>
-                        <button className="carousel-button">explore our expertise</button>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img className="carousel-image" src="./assets/images/image6.png" alt="image1" />
-                    <div className="info-container">
-                        <h2 className="heading">Ultrasonic Tank Testing</h2>
-                        <h4 className="description">
-                            The aim is to be able to indentify any leak rapidly so as to limit all
-                            risk of pollution as much as possible
-                        </h4>
-                        <button className="carousel-button">explore our expertise</button>
-                    </div>
-                </div>
-            </Slider>
-        );
+            </div>
+        ));
     }
 }

@@ -1,7 +1,10 @@
 .what-we-do-section {
-    background: #061c31;
+    background: url('./assets/images/wwd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
     .what-we-do-container {
-        position: relative;
         padding: 10%;
         padding-top: 2%;
         .heading {
@@ -79,12 +82,12 @@
                         margin-right: 3.2em;
                         font-size: 0.75em;
                         .chevron-circle {
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
                             right: initial;
                             float: initial;
                             margin-right: initial;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
                             border: 1px solid #fff;
                             border-radius: 50%;
                             margin-left: 0.6em;
