@@ -1,11 +1,15 @@
 import React from 'react';
-
+import ReactSvg from 'react-svg';
 export default class Footer extends React.Component {
     render() {
         return (
             <div className="footer-section">
                 <div className="footer-container">
-                    <div className="logo">Logo</div>
+                    <div className="logo-container">
+                        <ReactSvg path={require('../../assets/icons/logo.svg')}>
+                            <a className="logo" href="/home" />
+                        </ReactSvg>
+                    </div>
                     <div>Home</div>
                     <div>
                         Who We Are

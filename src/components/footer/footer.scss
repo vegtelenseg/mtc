@@ -10,8 +10,24 @@
         grid-template-columns: 250px repeat(5, 1fr) 250px;
         margin-bottom: 1.3em;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-
         padding-bottom: 2em;
+        .logo-container {
+            justify-self: center;
+            position: relative;
+            div {
+                position: relative;
+                .logo {
+                    cursor: pointer;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 9999;
+                }
+            }
+            svg {
+                filter: grayscale(1) brightness(100);
+            }
+        }
         div ul {
             margin-top: 1em;
             li {

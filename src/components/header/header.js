@@ -1,11 +1,16 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'react-feather';
-
+import ReactSvg from 'react-svg';
 export default class Header extends React.Component {
     render() {
         return (
             <div className="header-container">
                 <div className="pre-header-items-container">
+                    <div className="logo-container">
+                        <ReactSvg path={require('../../assets/icons/logo.svg')}>
+                            <a className="logo" href="/home" />
+                        </ReactSvg>
+                    </div>
                     <div className="pre-header-items">
                         <div className="telephone">
                             <Phone className="phone-icon" />
