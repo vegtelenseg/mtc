@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactSvg from 'react-svg';
+import footerItems from './footer-items';
 export default class Footer extends React.Component {
     render() {
+        const titles = ['Who We Are', 'What We Do', 'Our Work', 'Contact Us'];
         return (
             <div className="footer-section">
                 <div className="footer-container">
@@ -11,55 +13,7 @@ export default class Footer extends React.Component {
                         </ReactSvg>
                     </div>
                     <div>Home</div>
-                    <div>
-                        Who We Are
-                        <ul>
-                            <li>
-                                <a>About MTC Masters</a>
-                            </li>
-                            <li>
-                                <a>Our Team</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        What We Do
-                        <ul>
-                            <li>
-                                <a>Ultrasonic Tank Testing</a>
-                            </li>
-                            <li>
-                                <a>Tank Cleaning</a>
-                            </li>
-
-                            <li>
-                                <a>Pump and Tanks Installation</a>
-                            </li>
-                            <li>
-                                <a>Maintanance Services</a>
-                            </li>
-
-                            <li>
-                                <a>Health & Safety</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        Our Work
-                        <ul>
-                            <li>
-                                <a>Our Portfolio</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        Contact Us
-                        <ul>
-                            <li>
-                                <a>Enquiry Form</a>
-                            </li>
-                        </ul>
-                    </div>
+                    {this.renderFooterItems(titles)}
                     <div className="contact-us">
                         Get In Touch With Us
                         <ul>
@@ -84,5 +38,19 @@ export default class Footer extends React.Component {
                 </div>
             </div>
         );
+    }
+    renderFooterItems(titles) {
+        return titles.map((title, idx) => (
+            <div key={idx}>
+                {title}
+                {footerItems[idx].map((footerItem, idx) => (
+                    <ul>
+                        <li>
+                            <a>{footerItem}</a>
+                        </li>
+                    </ul>
+                ))}
+            </div>
+        ));
     }
 }
