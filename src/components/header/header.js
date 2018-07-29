@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'react-feather';
 import ReactSvg from 'react-svg';
+import { Link } from 'react-router-dom';
 export default class Header extends React.Component {
     render() {
         return (
@@ -8,7 +9,7 @@ export default class Header extends React.Component {
                 <div className="pre-header-items-container">
                     <div className="logo-container">
                         <ReactSvg path={require('../../assets/icons/logo.svg')}>
-                            <a className="logo" href="/home" />
+                            <Link className="logo" to="/" />
                         </ReactSvg>
                     </div>
                     <div className="pre-header-items">
@@ -28,19 +29,31 @@ export default class Header extends React.Component {
                 </div>
                 <ul className="header-items">
                     <li>
-                        <a>Home</a>
+                        <Link to="/" className={this.props.path === '/' ? 'active' : 'inactive'}>
+                            Home
+                        </Link>
                     </li>
                     <li>
-                        <a>Who We Are</a>
+                        <Link to="who-we-are">Who We Are</Link>
                     </li>
                     <li>
-                        <a>What We Do</a>
+                        <Link
+                            to="what-we-do"
+                            className={this.props.path === 'what-we-do' ? 'active' : 'inactive'}
+                        >
+                            What We Do
+                        </Link>
                     </li>
                     <li>
-                        <a>Our Projects</a>
+                        <Link
+                            to="our-projects"
+                            className={this.props.path === 'our-projects' ? 'active' : 'inactive'}
+                        >
+                            Our Projects
+                        </Link>
                     </li>
                     <li>
-                        <a>Contact Us</a>
+                        <Link to="contact-us">Contact Us</Link>
                     </li>
                 </ul>
             </div>

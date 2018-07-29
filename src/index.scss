@@ -163,6 +163,29 @@ input,
 select {
     vertical-align: middle;
 }
+
+.active {
+    position: relative;
+    &:after {
+        content: '';
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        margin-top: 0.43em;
+        top: 100%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 99999;
+        width: 0%;
+        animation: extend 0.65s ease-in-out 0.45s forwards;
+    }
+}
+@keyframes extend {
+    100% {
+        width: 100%;
+    }
+}
+
 @import './_variables.scss';
 @import '../public/assets/fonts/fonts.scss';
 @import './components/app/app.scss';

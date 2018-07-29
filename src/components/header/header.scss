@@ -33,7 +33,7 @@
             }
         }
         .pre-header-items {
-            padding-top: 0.47em;
+            padding-top: 0.9em;
             border-bottom: 1px solid #fff;
             float: right;
             right: 4em;
@@ -69,7 +69,7 @@
         position: absolute;
         font-family: 'MTC-SemiBold';
         right: 0;
-        top: 4.2em;
+        top: 5.4em;
         font-size: 0.8em;
         cursor: pointer;
         li {
@@ -80,6 +80,10 @@
             transition: all 0.34s ease-in-out;
             &:hover {
                 color: rgb(233, 230, 230);
+            }
+            a {
+                text-decoration: inherit;
+                color: inherit;
             }
         }
     }

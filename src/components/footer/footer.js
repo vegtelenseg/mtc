@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactSvg from 'react-svg';
 import footerItems from './footer-items';
+import { Link } from 'react-router-dom';
 export default class Footer extends React.Component {
     render() {
         const titles = ['Who We Are', 'What We Do', 'Our Work', 'Contact Us'];
@@ -46,7 +47,9 @@ export default class Footer extends React.Component {
                 {footerItems[idx].map((footerItem, idx) => (
                     <ul>
                         <li>
-                            <a>{footerItem}</a>
+                            <Link to={footerItem.toLowerCase().replace(/\s/g, '-')}>
+                                {footerItem}
+                            </Link>
                         </li>
                     </ul>
                 ))}

@@ -40,6 +40,10 @@
                 &:hover {
                     color: rgb(233, 230, 230);
                 }
+                a {
+                    color: inherit;
+                    text-decoration: inherit;
+                }
             }
         }
         .contact-us {
