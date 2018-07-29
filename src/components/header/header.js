@@ -34,12 +34,17 @@ export default class Header extends React.Component {
                         </Link>
                     </li>
                     <li>
-                        <Link to="who-we-are">Who We Are</Link>
+                        <Link
+                            to="who-we-are"
+                            className={this.props.path === '/who-we-are' ? 'active' : 'inactive'}
+                        >
+                            Who We Are
+                        </Link>
                     </li>
                     <li>
                         <Link
                             to="what-we-do"
-                            className={this.props.path === 'what-we-do' ? 'active' : 'inactive'}
+                            className={this.props.path === '/what-we-do' ? 'active' : 'inactive'}
                         >
                             What We Do
                         </Link>

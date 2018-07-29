@@ -11,7 +11,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <div>
-                <Header path={this.props.path} />
+                <Header path={this.props.match.path} />
                 <Carousel />
                 <Welcome />
                 <WhatWeDo />

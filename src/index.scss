@@ -149,7 +149,6 @@ table {
     border-spacing: 0;
 }
 
-/* change border colour to suit your needs */
 hr {
     display: block;
     height: 1px;
@@ -166,12 +165,14 @@ select {
 
 .active {
     position: relative;
+    color: #adacac !important;
+    box-sizing: border-box;
     &:after {
         content: '';
         height: 2px;
         background: #fff;
         position: absolute;
-        margin-top: 0.43em;
+        margin-top: 0.3em;
         top: 100%;
         left: 0;
         transform: translateY(-50%);

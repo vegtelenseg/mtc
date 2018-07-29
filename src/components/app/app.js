@@ -3,8 +3,9 @@ import { BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from '../../pages/home/home';
-import WhatWeDo from '../../pages/what-we-do/what-we-do';
 import Footer from '../footer/footer';
+import WhoWeAreView from '../../pages/who-we-are/who-we-are';
+import WhatWeDoView from '../../pages/what-we-do/what-we-do';
 
 export default class App extends React.Component {
     render() {
@@ -12,11 +13,9 @@ export default class App extends React.Component {
             <BrowserRouter>
                 <div className="app">
                     <Switch>
-                        <Route exact path="/" render={props => <Home {...props} path="/" />} />
-                        <Route
-                            path="/what-we-do"
-                            render={props => <WhatWeDo {...props} path="what-we-do" />}
-                        />
+                        <Route exact path="/" render={props => <Home {...props} />} />
+                        <Route path="/what-we-do" render={props => <WhatWeDoView {...props} />} />
+                        <Route path="/who-we-are" render={props => <WhoWeAreView {...props} />} />
                     </Switch>
                     <Footer />
                 </div>
