@@ -52,13 +52,18 @@ export default class Header extends React.Component {
                     <li>
                         <Link
                             to="our-projects"
-                            className={this.props.path === 'our-projects' ? 'active' : 'inactive'}
+                            className={this.props.path === '/our-projects' ? 'active' : 'inactive'}
                         >
                             Our Projects
                         </Link>
                     </li>
                     <li>
-                        <Link to="contact-us">Contact Us</Link>
+                        <Link
+                            to="contact-us"
+                            className={this.props.path === '/contact-us' ? 'active' : 'inactive'}
+                        >
+                            Contact Us
+                        </Link>
                     </li>
                 </ul>
             </div>

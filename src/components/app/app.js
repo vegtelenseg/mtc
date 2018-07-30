@@ -14,8 +14,16 @@ export default class App extends React.Component {
                 <div className="app">
                     <Switch>
                         <Route exact path="/" render={props => <Home {...props} />} />
-                        <Route path="/what-we-do" render={props => <WhatWeDoView {...props} />} />
-                        <Route path="/who-we-are" render={props => <WhoWeAreView {...props} />} />
+                        <Route
+                            exact
+                            path="/what-we-do"
+                            render={props => <WhatWeDoView {...props} />}
+                        />
+                        <Route
+                            exact
+                            path="/who-we-are"
+                            render={props => <WhoWeAreView {...props} />}
+                        />
                     </Switch>
                     <Footer />
                 </div>
