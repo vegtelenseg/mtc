@@ -10,7 +10,9 @@ export default class Footer extends React.Component {
                 <div className="footer-container">
                     <div className="logo-container">
                         <ReactSvg path={require('../../assets/icons/logo.svg')}>
-                            <a className="logo" href="/home" />
+                            <a className="logo" href="/home">
+                                <span />
+                            </a>
                         </ReactSvg>
                     </div>
                     <div>Home</div>
