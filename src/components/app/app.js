@@ -16,12 +16,17 @@ export default class App extends React.Component {
                         <Route exact path="/" render={props => <Home {...props} />} />
                         <Route
                             exact
+                            path="/who-we-are"
+                            render={props => <WhoWeAreView {...props} />}
+                        />
+                        <Route
+                            exact
                             path="/what-we-do"
                             render={props => <WhatWeDoView {...props} />}
                         />
                         <Route
                             exact
-                            path="/who-we-are"
+                            path="/our-projects"
                             render={props => <WhoWeAreView {...props} />}
                         />
                     </Switch>

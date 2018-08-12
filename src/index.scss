@@ -165,7 +165,6 @@ select {
 
 .active {
     position: relative;
-    color: #adacac !important;
     box-sizing: border-box;
     &:after {
         content: '';
@@ -197,3 +196,5 @@ select {
 @import './components/our-approach/our-approach.scss';
 @import './components/our-clientele/our-clientele.scss';
 @import './components/footer/footer.scss';
+
+@import './pages/what-we-do/what-we-do.css';

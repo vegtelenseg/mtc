@@ -1,0 +1,36 @@
+.head-image-style {
+    position: relative;
+    width: 100%;
+}
+.page-title-style {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%, 50%);
+    width: initial;
+    left: 10%;
+    color: #fff;
+    font-family: 'MTC-SemiBold';
+    font-size: 3em;
+    &:after {
+        content: '';
+        position: absolute;
+        height: 5px;
+        width: 130%;
+        margin-top: 0.3em;
+        background: #fff;
+        top: 100%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+    }
+}
+.description {
+    font-family: 'MTC-Regular';
+    font-size: 1em;
+    padding: 2em 10%;
+    line-height: 1.4em;
+    color: #061b30;
+    letter-spacing: 0.03em;
+    p:first-child {
+        margin-bottom: 1em;
+    }
+}
