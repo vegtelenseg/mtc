@@ -4,6 +4,7 @@ import ReactSvg from 'react-svg';
 import { Link } from 'react-router-dom';
 export default class Header extends React.Component {
     render() {
+        const { path } = this.props;
         return (
             <div className="header-container">
                 <div className="pre-header-items-container">
@@ -29,14 +30,14 @@ export default class Header extends React.Component {
                 </div>
                 <ul className="header-items">
                     <li>
-                        <Link to="/" className={this.props.path === '/' ? 'active' : 'inactive'}>
+                        <Link to="/" className={path === '/' ? 'active' : 'inactive'}>
                             Home
                         </Link>
                     </li>
                     <li>
                         <Link
                             to="who-we-are"
-                            className={this.props.path === '/who-we-are' ? 'active' : 'inactive'}
+                            className={path === '/who-we-are' ? 'active' : 'inactive'}
                         >
                             Who We Are
                         </Link>
@@ -44,7 +45,7 @@ export default class Header extends React.Component {
                     <li>
                         <Link
                             to="what-we-do"
-                            className={this.props.path === '/what-we-do' ? 'active' : 'inactive'}
+                            className={path === '/what-we-do' ? 'active' : 'inactive'}
                         >
                             What We Do
                         </Link>
@@ -52,7 +53,7 @@ export default class Header extends React.Component {
                     <li>
                         <Link
                             to="our-projects"
-                            className={this.props.path === '/our-projects' ? 'active' : 'inactive'}
+                            className={path === '/our-projects' ? 'active' : 'inactive'}
                         >
                             Our Projects
                         </Link>

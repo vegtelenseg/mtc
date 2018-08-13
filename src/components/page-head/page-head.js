@@ -5,7 +5,7 @@ export default class PageHeadView extends React.PureComponent {
     render() {
         const { imgUrl, pageTitle, imageStyle, pageTitleStyle } = this.props;
         return (
-            <div>
+            <div style={{ position: 'relative' }}>
                 <img src={imgUrl} className={imageStyle} alt="page-head-view" />
                 <div className={pageTitleStyle}>
                     <span>{pageTitle}</span>

@@ -1,3 +1,11 @@
+@mixin desc {
+    font-family: 'MTC-Regular';
+    font-size: 1em;
+    padding: 2em 10%;
+    line-height: 1.4em;
+    color: #061b30;
+    letter-spacing: 0.03em;
+}
 .head-image-style {
     position: relative;
     width: 100%;
@@ -24,13 +32,72 @@
     }
 }
 .description {
-    font-family: 'MTC-Regular';
-    font-size: 1em;
-    padding: 2em 10%;
-    line-height: 1.4em;
-    color: #061b30;
-    letter-spacing: 0.03em;
+    @include desc;
     p:first-child {
         margin-bottom: 1em;
+    }
+}
+.what-we-do-container {
+    background: url('../../assets//images/what-we-do/our-services.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .our-services {
+        margin: 0 10%;
+        padding-top: 1em;
+        padding-right: 1em;
+        color: #fff;
+        position: relative;
+        .heading {
+            font-family: 'MTC-Regular';
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            display: inline-block;
+            &::after {
+                content: '';
+                position: absolute;
+                height: 5px;
+                width: 80%;
+                background: #fff;
+                top: 100%;
+                left: 0;
+                transform: translateY(-50%);
+                margin-top: 0.24em;
+            }
+        }
+        .description {
+            @include desc;
+            color: #fff;
+            margin: 2em 0;
+            padding: 0;
+        }
+        .slick-slider {
+            .slick-prev {
+                display: none !important;
+            }
+        }
+        .service {
+            background: #fff;
+            display: inline-block;
+            width: 20% !important;
+            height: 400px;
+            font-family: 'MTC-Regular';
+            img {
+                width: 100%;
+                height: 85%;
+            }
+            &-title {
+                color: #061b30;
+                font-family: 'MTC-SemiBold';
+            }
+            &-description {
+                color: #061b30;
+            }
+            &-button {
+                color: #061b30;
+            }
+        }
     }
 }
