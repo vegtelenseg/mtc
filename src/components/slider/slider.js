@@ -7,7 +7,7 @@ export default class SimpleSlider extends React.Component {
             dots: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 1,
+            slidesToShow: 5,
             slidesToScroll: 1
         };
         return <Slider {...settings}>{this.props.children}</Slider>;

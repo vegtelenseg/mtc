@@ -3,6 +3,8 @@ import Header from '../../components/header/header';
 import whatWeDoHeaderUrl from '../../assets/images/what-we-do/Header-min.png';
 import PageHeadView from '../../components/page-head/page-head';
 import SimpleSlider from '../../components/slider/slider';
+import { Link } from 'react-router-dom';
+import ChevronRight from 'react-feather/dist/icons/chevron-right';
 export default class WhatWeDoView extends React.PureComponent {
     render() {
         return (
@@ -43,31 +45,119 @@ export default class WhatWeDoView extends React.PureComponent {
                             </p>
                         </div>
                         <SimpleSlider>
-                            <div className="service">
+                            <div className="service-container">
                                 <img
                                     src={require('../../assets/images/what-we-do/refill-stall.jpg')}
                                     alt="service-item"
                                 />
-                                <h3 className="service-title">title</h3>
-                                <p className="service-description">Description</p>
-                                <button className="service-button">
-                                    More<span>Icon</span>
-                                </button>
+                                <div className="service">
+                                    <h3 className="title">Ultrasonic Tank Testing</h3>
+                                    <p className="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div className="explore-more">
+                                        <Link to="/what-we-do/ultrasonic-tank-testing">
+                                            <span>Explore More</span>
+                                            <ChevronRight />
+                                        </Link>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <h3>2</h3>
+                            <div className="service-container">
+                                <img
+                                    src={require('../../assets/images/what-we-do/refill-stall.jpg')}
+                                    alt="service-item"
+                                />
+                                <div className="service">
+                                    <h3 className="title">Ultrasonic Tank Testing</h3>
+                                    <p className="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div className="explore-more">
+                                        <Link to="/what-we-do/ultrasonic-tank-testing">
+                                            <span>Explore More</span>
+                                            <ChevronRight />
+                                        </Link>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <h3>3</h3>
+                            <div className="service-container">
+                                <img
+                                    src={require('../../assets/images/what-we-do/refill-stall.jpg')}
+                                    alt="service-item"
+                                />
+                                <div className="service">
+                                    <h3 className="title">Ultrasonic Tank Testing</h3>
+                                    <p className="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div className="explore-more">
+                                        <Link to="/what-we-do/ultrasonic-tank-testing">
+                                            <span>Explore More</span>
+                                            <ChevronRight />
+                                        </Link>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <h3>4</h3>
+                            <div className="service-container">
+                                <img
+                                    src={require('../../assets/images/what-we-do/refill-stall.jpg')}
+                                    alt="service-item"
+                                />
+                                <div className="service">
+                                    <h3 className="title">Ultrasonic Tank Testing</h3>
+                                    <p className="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div className="explore-more">
+                                        <Link to="/what-we-do/ultrasonic-tank-testing">
+                                            <span>Explore More</span>
+                                            <ChevronRight />
+                                        </Link>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <h3>5</h3>
+                            <div className="service-container">
+                                <img
+                                    src={require('../../assets/images/what-we-do/refill-stall.jpg')}
+                                    alt="service-item"
+                                />
+                                <div className="service">
+                                    <h3 className="title">Ultrasonic Tank Testing</h3>
+                                    <p className="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div className="explore-more">
+                                        <Link to="/what-we-do/ultrasonic-tank-testing">
+                                            <span>Explore More</span>
+                                            <ChevronRight />
+                                        </Link>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <h3>6</h3>
+                            <div className="service-container">
+                                <img
+                                    src={require('../../assets/images/what-we-do/refill-stall.jpg')}
+                                    alt="service-item"
+                                />
+                                <div className="service">
+                                    <h3 className="title">Ultrasonic Tank Testing</h3>
+                                    <p className="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div className="explore-more">
+                                        <Link to="/what-we-do/ultrasonic-tank-testing">
+                                            <span>Explore More</span>
+                                            <ChevronRight />
+                                        </Link>
+                                    </div>
+                                </div>
                             </div>
                         </SimpleSlider>
                     </div>

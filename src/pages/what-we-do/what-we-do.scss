@@ -78,25 +78,55 @@
                 display: none !important;
             }
         }
-        .service {
+        .service-container {
             background: #fff;
             display: inline-block;
-            width: 20% !important;
-            height: 400px;
+            height: 600px;
             font-family: 'MTC-Regular';
+            position: relative;
+            margin-right: 0.78em;
+            width: initial !important;
             img {
                 width: 100%;
-                height: 85%;
+                height: 75%;
             }
-            &-title {
-                color: #061b30;
-                font-family: 'MTC-SemiBold';
-            }
-            &-description {
-                color: #061b30;
-            }
-            &-button {
-                color: #061b30;
+            .service {
+                padding: 1em;
+                position: relative;
+                .title {
+                    color: #061b30;
+                    font-family: 'MTC-SemiBold';
+                    position: relative;
+                    &::after {
+                        content: '';
+                        height: 2px;
+                        width: 100%;
+                        background: #061b30;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        margin-top: 0.28em;
+                    }
+                }
+                .description {
+                    color: #061b30;
+                    margin: 1em 0;
+                    font-size: 0.8em;
+                }
+                .explore-more {
+                    color: #fff;
+                    padding: 0.5em;
+                    background: #061b30;
+                    font-family: 'MTC-Regular';
+                    border-radius: 2px;
+                    display: inline-block;
+                    bottom: 6px;
+                    position: relative;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                }
             }
         }
     }
