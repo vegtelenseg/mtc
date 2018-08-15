@@ -8,6 +8,9 @@ import WhoWeAreView from '../../pages/who-we-are/who-we-are';
 import WhatWeDoView from '../../pages/what-we-do/what-we-do';
 
 export default class App extends React.Component {
+    shouldComponentUpdate(props) {
+        console.log({ props });
+    }
     render() {
         return (
             <BrowserRouter>

@@ -6,7 +6,14 @@ import WhatWeDo from '../../components/what-we-do/what-we-do';
 import OurApproach from '../../components/our-approach/our-approach';
 import OurClientele from '../../components/our-clientele/our-clientele';
 
-export default class Home extends React.Component {
+export default class Home extends React.PureComponent {
+    componentWillReceiveProps(nextProps) {
+        console.log({ nextProps });
+        const i = this.props.location;
+        console.log({ i });
+        const locationChanged = nextProps.location.pathname !== this.props.location.pathname;
+        console.log({ locationChanged });
+    }
     render() {
         return (
             <div>
