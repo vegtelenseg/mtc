@@ -7,6 +7,12 @@ import { Link } from 'react-router-dom';
 import ChevronRight from 'react-feather/dist/icons/chevron-right';
 export default class WhatWeDoView extends React.PureComponent {
     render() {
+        const settings = {
+            infinite: true,
+            speed: 500,
+            slidesToShow: 5,
+            slidesToScroll: 1
+        };
         return (
             <div>
                 <Header path={this.props.match.path} />
@@ -44,7 +50,7 @@ export default class WhatWeDoView extends React.PureComponent {
                                 affecting the volume of the product in the tank.
                             </p>
                         </div>
-                        <SimpleSlider>
+                        <SimpleSlider settings={settings}>
                             <div className="service-container">
                                 <img
                                     src={require('../../assets/images/what-we-do/refill-stall.jpg')}
@@ -70,7 +76,7 @@ export default class WhatWeDoView extends React.PureComponent {
                                     alt="service-item"
                                 />
                                 <div className="service">
-                                    <h3 className="title">Ultrasonic Tank Testing</h3>
+                                    <h3 className="title">New Pump & Tank Installation</h3>
                                     <p className="description">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -89,7 +95,9 @@ export default class WhatWeDoView extends React.PureComponent {
                                     alt="service-item"
                                 />
                                 <div className="service">
-                                    <h3 className="title">Ultrasonic Tank Testing</h3>
+                                    <h3 className="title">
+                                        Waste Water Treatment Neutralization And Disposal
+                                    </h3>
                                     <p className="description">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -108,7 +116,7 @@ export default class WhatWeDoView extends React.PureComponent {
                                     alt="service-item"
                                 />
                                 <div className="service">
-                                    <h3 className="title">Ultrasonic Tank Testing</h3>
+                                    <h3 className="title">Fuel Quality Testing</h3>
                                     <p className="description">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -160,6 +168,17 @@ export default class WhatWeDoView extends React.PureComponent {
                                 </div>
                             </div>
                         </SimpleSlider>
+                    </div>
+                </div>
+                <div className="industry-standards-container">
+                    <div className="industry-standards">
+                        <h3 className="heading">Industry Standards</h3>
+                        <p className="description">
+                            We are a dedicated, committed and competent fuel quality specialists
+                            with SABS approved state of the art equipment, which filters all foreign
+                            objects or contaminants from the tanks, with little effect affecting the
+                            volume of the product in the tank.
+                        </p>
                     </div>
                 </div>
             </div>

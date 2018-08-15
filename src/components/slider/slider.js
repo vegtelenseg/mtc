@@ -3,13 +3,6 @@ import Slider from 'react-slick';
 
 export default class SimpleSlider extends React.Component {
     render() {
-        var settings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 5,
-            slidesToScroll: 1
-        };
-        return <Slider {...settings}>{this.props.children}</Slider>;
+        return <Slider {...this.props.settings}>{this.props.children}</Slider>;
     }
 }

@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import slidesInfo from './slides-info';
 export default class Carousel extends React.Component {
     render() {
-        var settings = {
+        const settings = {
             infinite: true,
             speed: 1000,
             slidesToShow: 1,
@@ -11,7 +11,7 @@ export default class Carousel extends React.Component {
             arrows: true,
             autoplay: true
         };
-        return <Slider {...settings}>{this.renderCarouselItems(slidesInfo)}</Slider>;
+        return <Slider settings={settings}>{this.renderCarouselItems(slidesInfo)}</Slider>;
     }
     renderCarouselItems(slidesInfo) {
         return slidesInfo.map((slideInfo, idx) => (
