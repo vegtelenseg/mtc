@@ -40,10 +40,17 @@
             grid-row-gap: 4em;
             margin-top: 1.78em;
             .service-type {
-                height: 12em;
-                width: 21em;
+                height: 15em;
                 background: #fff;
                 position: relative;
+                position: relative;
+                div {
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: inherit;
+                    }
+                }
                 .service-name {
                     color: #fff;
                     font-family: 'MTC-SemiBold';

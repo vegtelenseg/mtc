@@ -5,27 +5,27 @@ export default class WhatWeDo extends React.Component {
         const serviceTypes = [
             {
                 serviceName: 'ultrasonic / vacusonic testing',
-                imageUrl: ''
+                imageUrl: require('../../assets/images/what-we-do/ultrasonic-tank-testing.png')
             },
             {
                 serviceName: 'tank cleaning',
-                imageUrl: ''
+                imageUrl: require('../../assets/images/what-we-do/neotel.png')
             },
             {
                 serviceName: 'pump and tank installation',
-                imageUrl: ''
+                imageUrl: require('../../assets/images/what-we-do/tank-testing.png')
             },
             {
                 serviceName: 'maintanance services',
-                imageUrl: ''
+                imageUrl: require('../../assets/images/what-we-do/pump-install.jpg')
             },
             {
                 serviceName: 'health & safety',
-                imageUrl: ''
+                imageUrl: require('../../assets/images/what-we-do/tank-ladder.jpg')
             },
             {
                 serviceName: 'ultrasonic/vacusonic',
-                imageUrl: ''
+                imageUrl: require('../../assets/images/what-we-do/pressure-pump.png')
             }
         ];
         return (
