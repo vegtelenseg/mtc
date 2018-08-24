@@ -1,20 +1,94 @@
 .our-clientele-container {
     background: #061c31;
-    padding-top: 5%;
     background: url('./assets/images/image8.png');
     background-repeat: no-repeat;
-    .heading {
+    background-size: cover;
+    position: relative;
+    padding: 2em 10%;
+    .left-section,
+    .right-section {
+        position: relative;
+        display: inline-block;
+        width: 50%;
+    }
+    .left-section {
+        .heading {
+            font-family: 'MTC-SemiBold';
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: #061b30;
+            margin-bottom: .3em;
+            span {
+                position: relative;
+                &:after {
+                    content: '';
+                    background: #061b30;
+                    position: absolute;
+                    height: 3px;
+                    left: 0;
+                    top: 100%;
+                    width: 100%;
+                    margin-top: 0.2em;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    .right-section {
+        .slick-list {
+            transform: translateY(15%);
+        }
+        .slick-prev {
+            display: none !important;
+        }
+        .slick-arrow {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            left: 100%;
+            position: relative;
+            height: 45px;
+            width: 45px;
+        }
+        .slick-next {
+            border-radius: 50%;
+            border: 3px solid #fff;
+            background: none !important;
+            box-sizing: border-box;
+            &:before {
+                background: url('./assets/icons/chevron-right-white.svg') !important;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+                background-position: center;
+                width: 40px;
+                height: 40px;
+                svg {
+                    fill: white !important;
+                }
+            }
+        }
+        .client-slide {
+            .client-logo {
+                display: inline-block;
+            }
+        }
+    }
+    .clientele-heading {
         color: #fff !important;
         span:after {
             background: #fff !important;
         }
     }
 }
-
 .our-clientele-description {
     font-family: 'MTC-Bold';
     color: #fff !important;
     font-size: 1.14em !important;
+    padding-left: 0;
+    &:last-child {
+        padding-top: 0;
+    }
 }
 .sub-text {
     font-family: 'MTC-Light' !important;
