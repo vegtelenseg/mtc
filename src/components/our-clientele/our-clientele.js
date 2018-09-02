@@ -1,6 +1,5 @@
 import React from 'react';
 import SimpleSlider from '../slider/slider';
-
 export default class OurClientele extends React.Component {
     render() {
         const settings = {

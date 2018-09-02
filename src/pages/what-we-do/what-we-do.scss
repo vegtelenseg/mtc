@@ -43,15 +43,15 @@
     background-position: center;
     background-size: cover;
     .our-services {
-        margin: 0 10%;
         padding-top: 1em;
         padding-right: 1em;
+        height: 100vh;
         color: #fff;
         position: relative;
         .heading {
             font-family: 'MTC-Regular';
             font-size: 3em;
-            margin: 0;
+            margin: 0 10%;
             padding: 0;
             position: relative;
             display: inline-block;
@@ -70,27 +70,32 @@
         .description {
             @include desc;
             color: #fff;
-            margin: 2em 0;
+            margin: 2em 10%;
             padding: 0;
+            padding-bottom: 1.5em;
         }
         .slick-slider {
             .slick-prev {
                 display: none !important;
             }
+            .slick-slide {
+                margin: 0 5px;
+            }
         }
         .service-container {
-            background: #fff;
             font-family: 'MTC-Regular';
-            position: relative;
-            margin-right: 0.78em;
-            width: initial !important;
-            margin-bottom: 1.8em;
+            display: flex;
+            bottom: 2em;
             img {
                 width: 100%;
             }
+            margin: 0 10px;
             .service {
-                padding: 1em;
-                position: relative;
+                background: #fff;
+                display: flex;
+                flex-direction: column;
+                .caption {
+                    margin: .95em;
                 .title {
                     color: #061b30;
                     font-family: 'MTC-SemiBold';
@@ -108,8 +113,9 @@
                 }
                 .description {
                     color: #061b30;
-                    margin: 1em 0;
                     font-size: 0.8em;
+                    margin-left: 0;
+                    margin-right: 0;
                 }
                 .explore-more {
                     color: #fff;
@@ -126,14 +132,18 @@
                     }
                 }
             }
+            }
         }
     }
 }
 .industry-standards-container {
     .industry-standards {
         margin: 0 10%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         .heading {
             font-family: 'MTC-Regular';
+            grid-column: 1;
             font-size: 3em;
             margin: 0;
             padding: 0;
@@ -144,7 +154,7 @@
             &::after {
                 content: '';
                 height: 5px;
-                width: 120%;
+                width: 80%;
                 background: #061b30;
                 position: absolute;
                 top: 100%;
@@ -154,6 +164,43 @@
         }
         .description {
             padding-left: 0;
+            grid-column: 1 / span 2;
+        }
+    }
+    .is-section-two {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 10%;
+        .image {
+            grid-column: 1;
+            padding-bottom: 2.2em;
+        
+        }
+        .listings {
+            grid-column: 2;
+            position: relative;
+            font-family: 'MTC-SemiBold';
+            ul {
+                font-family: inherit;
+                display: inline-block;
+                padding-top: 1.78em;
+                li {
+                    padding: .25em 0;
+                }
+            }
+            .other-listings {
+                font-family: 'MTC-Bold';
+                display: inline-block;
+                top: 0;
+                padding-left: 2.5em;
+                font-size: 1.1em;
+                position: absolute;
+                ul {
+                    font-family: 'MTC-SemiBold';
+                    padding-left: 1.5em;
+                    padding-top: .4em;
+                }
+            }
         }
     }
 }
