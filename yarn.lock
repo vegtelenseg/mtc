@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@babel/runtime@^7.0.0-rc.2":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.0.0.tgz#adeb78fedfc855aa05bc041640f3f6f98e85424c"
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
 "@tanem/svg-injector@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@tanem/svg-injector/-/svg-injector-1.2.1.tgz#3120e90246d0eb3c4fc6c61586a6f028a3c658ae"
@@ -5959,9 +5965,10 @@ react-slick@^0.23.1:
     resize-observer-polyfill "^1.5.0"
 
 react-svg@^5.0.8:
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-5.0.8.tgz#b4bd9e0e05cf22d9a8f10b2b2bbb196a8e19b470"
+  version "5.0.23"
+  resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-5.0.23.tgz#1acca6f011d88abaeee19419422eb3b79ac2e986"
   dependencies:
+    "@babel/runtime" "^7.0.0-rc.2"
     "@tanem/svg-injector" "^1.2.1"
     prop-types "^15.6.2"
 
@@ -6076,6 +6083,10 @@ regenerate@^1.2.1:
 regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
+
+regenerator-runtime@^0.12.0:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
 
 regenerator-transform@^0.10.0:
   version "0.10.1"

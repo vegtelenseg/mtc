@@ -95,43 +95,43 @@
                 display: flex;
                 flex-direction: column;
                 .caption {
-                    margin: .95em;
-                .title {
-                    color: #061b30;
-                    font-family: 'MTC-SemiBold';
-                    position: relative;
-                    &::after {
-                        content: '';
-                        height: 2px;
-                        width: 100%;
+                    margin: 0.95em;
+                    .title {
+                        color: #061b30;
+                        font-family: 'MTC-SemiBold';
+                        position: relative;
+                        &::after {
+                            content: '';
+                            height: 2px;
+                            width: 100%;
+                            background: #061b30;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            margin-top: 0.28em;
+                        }
+                    }
+                    .description {
+                        color: #061b30;
+                        font-size: 0.8em;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                    .explore-more {
+                        color: #fff;
+                        padding: 0.5em;
                         background: #061b30;
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
-                        margin-top: 0.28em;
+                        font-family: 'MTC-Regular';
+                        border-radius: 2px;
+                        display: inline-block;
+                        bottom: 6px;
+                        position: relative;
+                        a {
+                            text-decoration: none;
+                            color: inherit;
+                        }
                     }
                 }
-                .description {
-                    color: #061b30;
-                    font-size: 0.8em;
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-                .explore-more {
-                    color: #fff;
-                    padding: 0.5em;
-                    background: #061b30;
-                    font-family: 'MTC-Regular';
-                    border-radius: 2px;
-                    display: inline-block;
-                    bottom: 6px;
-                    position: relative;
-                    a {
-                        text-decoration: none;
-                        color: inherit;
-                    }
-                }
-            }
             }
         }
     }
@@ -174,7 +174,6 @@
         .image {
             grid-column: 1;
             padding-bottom: 2.2em;
-        
         }
         .listings {
             grid-column: 2;
@@ -185,7 +184,7 @@
                 display: inline-block;
                 padding-top: 1.78em;
                 li {
-                    padding: .25em 0;
+                    padding: 0.25em 0;
                 }
             }
             .other-listings {
@@ -198,7 +197,7 @@
                 ul {
                     font-family: 'MTC-SemiBold';
                     padding-left: 1.5em;
-                    padding-top: .4em;
+                    padding-top: 0.4em;
                 }
             }
         }
